@@ -151,6 +151,11 @@ typedef NS_ENUM(NSInteger, JBChartViewState){
  */
 - (void)setState:(JBChartViewState)state animated:(BOOL)animated;
 
+#pragma mark - BEGIN Protected Properties and Methods To Be Overriden or Called By Subclasses
+- (BOOL)hasMaximumValue;
+- (BOOL)hasMinimumValue;
+#pragma mark Protected Properties and Methods To Be Overriden or Called By Subclasses END -
+
 @end
 
 /**
