@@ -47,13 +47,6 @@ static CGFloat const kJBLineChartViewDefaultStrokeWidth = 5.0f;
 static NSInteger const kJBLineChartViewDefaultDotRadiusFactor = 3; // 3x size of line width
 static NSInteger const kJBLineChartUnselectedLineIndex = -1;
 
-@interface JBChartView (Private)
-
-- (BOOL)hasMaximumValue;
-- (BOOL)hasMinimumValue;
-
-@end
-
 @interface JBLineChartView () <JBLineChartLinesViewDataSource, JBLineChartDotsViewDataSource>
 
 @property (nonatomic, strong) NSArray *lineChartLines; // Collection of JBLineChartLines

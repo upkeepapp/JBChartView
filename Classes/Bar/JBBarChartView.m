@@ -22,13 +22,6 @@ static NSInteger const kJBBarChartViewUndefinedBarIndex = -1;
 // Colors (JBChartView)
 static UIColor *kJBBarChartViewDefaultBarColor = nil;
 
-@interface JBChartView (Private)
-
-- (BOOL)hasMaximumValue;
-- (BOOL)hasMinimumValue;
-
-@end
-
 @interface JBBarChartView () <JBGradientBarViewDataSource>
 
 @property (nonatomic, strong) NSArray *chartData; // index = column, value = height
